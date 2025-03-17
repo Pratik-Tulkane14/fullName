@@ -38,7 +38,7 @@ function App() {
         </button>
         {isShow ? (
           <p>
-            Full Name:{firstName},{lastName}
+            Full Name:{firstName} {lastName}
           </p>
         ) : null}
       </form>
