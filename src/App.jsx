@@ -7,7 +7,7 @@ function App() {
   const [isShow, setIsShow] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
-    setIsShow((prev) => !prev);
+    setIsShow(true);
   };
   return (
     <main className="main">
