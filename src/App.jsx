@@ -10,9 +10,8 @@ function App() {
     setIsShow(true);
   };
   return (
-    <main className="main">
-      <h1>Full Name Display</h1>
       <form onSubmit={handleSubmit} className="form">
+        <h1>Full Name Display</h1>
         <div className="first-section">
           <label htmlFor="FName">First Name:</label>
           <input
@@ -42,7 +41,6 @@ function App() {
           </p>
         ) : null}
       </form>
-    </main>
   );
 }
 
