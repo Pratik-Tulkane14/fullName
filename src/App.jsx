@@ -10,6 +10,7 @@ function App() {
     setIsShow(true);
   };
   return (
+    <>
       <form onSubmit={handleSubmit} className="form">
         <h1>Full Name Display</h1>
         <div className="first-section">
@@ -35,12 +36,13 @@ function App() {
         <button type="submit" className="submit-btn">
           Submit
         </button>
-        {isShow ? (
-          <p>
-            Full Name:{firstName} {lastName}
-          </p>
-        ) : null}
       </form>
+      {isShow ? (
+        <p>
+          Full Name:{firstName} {lastName}
+        </p>
+      ) : null}
+    </>
   );
 }
 
