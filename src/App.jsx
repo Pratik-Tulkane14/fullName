@@ -5,8 +5,10 @@ function App() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [isShow, setIsShow] = useState(false);
+  const [fullName, setFullName] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
+    setFullName(`${firstName} ${lastName}`);
     setIsShow(true);
   };
   return (
@@ -37,11 +39,7 @@ function App() {
           Submit
         </button>
       </form>
-      {isShow ? (
-        <p>
-          Full Name:{firstName} {lastName}
-        </p>
-      ) : null}
+      {isShow ? <p>Full Name: {fullName}</p> : null}
     </>
   );
 }
